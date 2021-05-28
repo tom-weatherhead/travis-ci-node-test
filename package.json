@@ -90,7 +90,7 @@
 	"bundledDependencies": [],
 	"optionalDependencies": {},
 	"engines": {
-		"node": ">= 10"
+		"node": ">= 0.8.6"
 	},
 	"os": [
 		"darwin",

@@ -1,7 +1,9 @@
 language: node_js
 os:
   - linux
+  - osx
 dist: focal
+osx_image: xcode12.5
 node_js:
   - 16
   - 14
