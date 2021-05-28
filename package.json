@@ -12,14 +12,18 @@
 	"bugs": {
 		"url": "https://github.com/tom-weatherhead/common-utilities.ts/issues"
 	},
-	"source": "src/main.ts",
-	"browser": "dist/travis-ci-node-test.js",
-	"main": "dist/travis-ci-node-test.cjs.js",
-	"module": "dist/travis-ci-node-test.esm.js",
-	"types": "dist/types/main.d.ts",
-	"files": [
+	"// source": "src/main.ts",
+	"// browser": "dist/travis-ci-node-test.js",
+	"// main": "dist/travis-ci-node-test.cjs.js",
+	"main": "src/main.js",
+	"// module": "dist/travis-ci-node-test.esm.js",
+	"// types": "dist/types/main.d.ts",
+	"// files": [
 		"dist/travis-ci-node-test*.js",
 		"dist/types/**/*.d.ts"
+	],
+	"files": [
+		"src/main.js"
 	],
 	"man": [],
 	"directories": {
@@ -45,7 +49,8 @@
 		"lint": "eslint src --ext .ts",
 		"build": "tsc",
 		"rollup": "rollup --config",
-		"test": "jest --detectOpenHandles --forceExit",
+		"// test": "jest --detectOpenHandles --forceExit",
+		"test": "node test/main.test.js",
 		"deploy": "eval mv $npm_package_name-$npm_package_version.tgz $(echo $npm_package_config_deploy_target_dir)/",
 		"// prepare": "npm run build",
 		"prepublishOnly": "npm test && npm run lint",

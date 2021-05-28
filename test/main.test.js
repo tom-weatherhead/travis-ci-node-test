@@ -1,6 +1,7 @@
-// test/main.test.ts
+// test/main.test.js
 
-import * as engine from '../dist/main';
+// const engine = require('../dist/main');
+const engine = require('..');
 
 const a = 2;
 const b = 3;
@@ -14,4 +15,6 @@ console.log('actualResult:', typeof actualResult, actualResult);
 if (actualResult !== expectedResult) {
 	console.error('Not equal');
 	throw new Error('Not equal');
+} else {
+	console.log('Equal');
 }
