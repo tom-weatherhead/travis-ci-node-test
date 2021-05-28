@@ -4,6 +4,17 @@ os:
 dist: focal
 node_js:
   - 16
+  - 14
+  - 12
+  - 10
+  - 8
+  - 6
+  - 4
+  - iojs
+  - 0.12.18
+  - 0.10.48
+  - 0.8.28
+  - 0.8.6
 branches:
   only:
     - main
