@@ -18,3 +18,6 @@ if (actualResult !== expectedResult) {
 } else {
 	console.log('Equal');
 }
+
+console.log('generalTests:');
+engine.generalTests();
