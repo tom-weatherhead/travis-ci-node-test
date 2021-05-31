@@ -75,6 +75,7 @@ function generalTests() {
 }
 
 module.exports = {
+	generalTests: generalTests,
 	add: add,
-	generalTests: generalTests
+	sum: sum
 };

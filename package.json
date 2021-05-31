@@ -1,29 +1,22 @@
 {
 	"name": "travis-ci-node-test",
-	"version": "0.0.0",
-	"description": "Common utility functions implemented in TypeScript.",
+	"version": "0.0.1",
+	"description": "Test of Travis.ci’s testing of a Node.js project",
 	"keywords": [
-		"TypeScript",
+		"compatibility",
 		"utilities"
 	],
 	"private": false,
-	"homepage": "https://github.com/tom-weatherhead/common-utilities.ts#readme",
-	"repository": "github:tom-weatherhead/common-utilities.ts",
+	"homepage": "https://github.com/tom-weatherhead/travis-ci-node-test#readme",
+	"repository": "github:tom-weatherhead/travis-ci-node-test",
 	"bugs": {
-		"url": "https://github.com/tom-weatherhead/common-utilities.ts/issues"
+		"url": "https://github.com/tom-weatherhead/travis-ci-node-test/issues"
 	},
-	"// source": "src/main.ts",
-	"// browser": "dist/travis-ci-node-test.js",
-	"// main": "dist/travis-ci-node-test.cjs.js",
 	"main": "src/main.js",
-	"// module": "dist/travis-ci-node-test.esm.js",
-	"// types": "dist/types/main.d.ts",
-	"// files": [
-		"dist/travis-ci-node-test*.js",
-		"dist/types/**/*.d.ts"
-	],
+	"types": "src/main.d.ts",
 	"files": [
-		"src/main.js"
+		"src/*.js",
+		"src/main.d.ts"
 	],
 	"man": [],
 	"directories": {
@@ -35,53 +28,17 @@
 		"test": "test"
 	},
 	"scripts": {
-		"all": "npm run rebuild && npm pack && npm run deploy",
-		"clean-build-products": "rm -rf coverage && rm -rf dist",
-		"clean-offline": "npm run clean-build-products",
-		"clean-packages": "rm -rf node_modules && rm -f package-lock.json",
-		"clean": "npm run clean-build-products && npm run clean-packages",
-		"rebuild": "npm run clean && npm i && npm run build-and-test",
-		"// rebuild-offline": "npm run clean-build-products && npm run build-and-test",
-		"build-and-test": "npm run prettier-check && npm run lint && npm run build && npm run rollup && npm test",
-		"prettier-check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
-		"prettier-list": "prettier --list-different \"**/*.js\" \"**/*.ts\"",
-		"prettier-format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-		"lint": "eslint src --ext .ts",
-		"build": "tsc",
-		"rollup": "rollup --config",
-		"// test": "jest --detectOpenHandles --forceExit",
+		"all": "npm pack && npm run deploy",
 		"test": "node test/main.test.js",
 		"deploy": "eval mv $npm_package_name-$npm_package_version.tgz $(echo $npm_package_config_deploy_target_dir)/",
-		"// prepare": "npm run build",
-		"prepublishOnly": "npm test && npm run lint",
-		"preversion": "npm run lint",
-		"version": "npm run format && git add -A src",
-		"postversion": "git push && git push --tags",
 		"loc": "git ls-files | grep -v package-lock.json | tr -d '\\r' | tr '\\n' '\\0' | xargs -0 wc -l",
-		"re": "npm run prettier-format && npm run clean-build-products && npm run build-and-test && npm pack && npm run deploy",
-		"f": "npm run clean && npm i && npm run re",
 		"start": "npm run all"
 	},
 	"config": {
 		"deploy_target_dir": "$NPM_PKG_DIR"
 	},
 	"publishConfig": {},
-	"devDependencies": {
-		"@babel/core": "^7.14.3",
-		"@babel/preset-env": "^7.14.2",
-		"@babel/preset-typescript": "^7.13.0",
-		"@types/eslint": "^7.2.12",
-		"@types/jest": "^26.0.23",
-		"@types/node": "^14",
-		"@typescript-eslint/eslint-plugin": "^4.25.0",
-		"@typescript-eslint/parser": "^4.25.0",
-		"eslint": "^7.27.0",
-		"jest": "^27.0.1",
-		"prettier": "^2.3.0",
-		"rollup": "^2.50.2",
-		"rollup-plugin-terser": "^7.0.2",
-		"typescript": "^4.3.2"
-	},
+	"devDependencies": {},
 	"peerDependencies": {},
 	"// The correct name is bundledDependencies": true,
 	"// The name bundleDependencies is also honoured": true,

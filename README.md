@@ -1,9 +1,17 @@
 # travis-ci-node-test
 Test of Travis.ci's testing of a Node.js project
 
+Uses versions of Node.js as early as 0.8.6.
+
 Obligatory BadgeFest:
 
-<!-- [![status][status-badge-image]][status-url] -->
+[![codeclimate][codeclimate-badge-image]][codeclimate-url]
+[![git][git-badge-image]][git-url]
+[![github][github-badge-image]][github-url]
+[![terminal][terminal-badge-image]][terminal-url]
+[![travis][travis-badge-image]][travis-url]
+[![typescript][typescript-badge-image]][typescript-url]
+
 [![travis status][travis-status-badge-image]][travis-status-url]
 [![build status][build-status-badge-image]][build-status-url]
 [![latest tag][latest-tag-badge-image]][latest-tag-url]
@@ -13,22 +21,20 @@ Obligatory BadgeFest:
 [![contributors][contributors-badge-image]][contributors-url]
 [![branches][branches-badge-image]][branches-url]
 [![releases][releases-badge-image]][releases-url]
-<!-- [![repo dependents][repo-dependents-badge-image]][repo-dependents-url] -->
-<!-- [![pkg dependents][pkg-dependents-badge-image]][pkg-dependents-url] -->
-<!-- [![commits][commits-badge-image]][commits-url]
-[![last commit][last-commit-badge-image]][last-commit-url]
-[![install size][install-size-badge-image]][install-size-url] -->
 [![known vulnerabilities][known-vulnerabilities-badge-image]][known-vulnerabilities-url]
 [![lines of code][lines-of-code-badge-image]][lines-of-code-url]
 [![technical debt][technical-debt-badge-image]][technical-debt-url]
 [![maintainability][maintainability-badge-image]][maintainability-url]
-<!-- [![test coverage][test-coverage-badge-image]][test-coverage-url] -->
 [![license][license-badge-image]][license-url]
-[![codeclimate][codeclimate-badge-image]][codeclimate-url]
-[![git][git-badge-image]][git-url]
-[![github][github-badge-image]][github-url]
-[![terminal][terminal-badge-image]][terminal-url]
-[![travis][travis-badge-image]][travis-url]
+
+<!-- [![status][status-badge-image]][status-url] -->
+<!-- [![repo dependents][repo-dependents-badge-image]][repo-dependents-url] -->
+<!-- [![pkg dependents][pkg-dependents-badge-image]][pkg-dependents-url] -->
+<!-- [![commits][commits-badge-image]][commits-url]
+[![last commit][last-commit-badge-image]][last-commit-url]
+[![types][types-badge-image]][types-url]
+[![install size][install-size-badge-image]][install-size-url] -->
+<!-- [![test coverage][test-coverage-badge-image]][test-coverage-url] -->
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -63,6 +69,8 @@ Obligatory BadgeFest:
 [last-commit-url]: https://badgen.net/github/last-commit/tom-weatherhead/travis-ci-node-test
 [install-size-badge-image]: https://badgen.net/packagephobia/install/travis-ci-node-test
 [install-size-url]: https://badgen.net/packagephobia/install/travis-ci-node-test
+[types-badge-image]: https://badgen.net/npm/types/travis-ci-node-test
+[types-url]: https://badgen.net/npm/types/travis-ci-node-test
 [known-vulnerabilities-badge-image]: https://snyk.io/test/github/tom-weatherhead/travis-ci-node-test/badge.svg?targetFile=package.json&package-lock.json
 [known-vulnerabilities-url]: https://snyk.io/test/github/tom-weatherhead/travis-ci-node-test?targetFile=package.json&package-lock.json
 [lines-of-code-badge-image]: https://badgen.net/codeclimate/loc/tom-weatherhead/travis-ci-node-test
@@ -79,11 +87,12 @@ Obligatory BadgeFest:
 [codeclimate-badge-image]: https://badgen.net/badge/icon/codeclimate?icon=codeclimate&label
 [codeclimate-url]: https://codeclimate.com
 [git-badge-image]: https://badgen.net/badge/icon/git?icon=git&label
-[git-url]: https://git.com
+[git-url]: https://git-scm.com
 [github-badge-image]: https://badgen.net/badge/icon/github?icon=github&label
 [github-url]: https://github.com
 [terminal-badge-image]: https://badgen.net/badge/icon/terminal?icon=terminal&label
-[terminal-url]: https://terminal.com
+[terminal-url]: https://en.wikipedia.org/wiki/History_of_Unix
 [travis-badge-image]: https://badgen.net/badge/icon/travis?icon=travis&label
 [travis-url]: https://travis-ci.com
-
+[typescript-badge-image]: https://badgen.net/badge/icon/typescript?icon=typescript&label
+[typescript-url]: https://www.typescriptlang.org
